@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SHIPPER RONG DO - SHIP NHANH SIEU RE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom style -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Loading Flat UI -->
+  <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar-top navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="col-sm-12">
+        <div class="navbar-header pull-left">
+          <div class="nav">Hotline: <b class="text-danger">0985 20 20 20</b></div>
+        </div>
+
+        <!-- I don't want it apart of the collapsible portion -->
+        <div class="navbar-header pull-right">
+          <ul class="pull-left">
+            <li><a href="#">Đăng ký</a> </li>
+            <li><a href="#">Đăng nhập</a> </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container container-header text-center">
+    <div class="logo col-sm-4"><img src="img/logo.png" height="80"></div>
+    <div class="hotline col-sm-4"></div>
+    <div class="searchmsp col-sm-4">
+      <div class="form-group">
+
+        <div class="input-group">
+
+          <input type="text" class="form-control" placeholder="Nhập mã đơn hàng">
+          <span class="input-group-btn">
+                      <button class="btn btn-danger" type="button">Kiểm tra</button>
+                    </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="navbar navbar-default navbar-embossed" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+        <a class="navbar-brand text-center" href="#"><span class="glyphicon glyphicon-home"></span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-01">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="active"><a href="#">GIỚI THIỆU</a></li>
+          <li><a href="#">BẢNG GIÁ VẬN CHUYỂN</a></li>
+          <li><a href="#">HƯỚNG DẪN</a></li>
+          <li><a href="#">DỊCH VỤ GIAO HÀNG</a></li>
+          <li><a href="#">QUY ĐỊNH VẬN CHUYỂN</a></li>
+          <li><a href="#">THÔNG BÁO</a></li>
+          <li><a href="#">LIÊN HỆ</a></li>
+        </ul>
+
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row ">
+      <div class="col-sm-12">
+        <div class="col-sm-3 col-xs-4 pull-right">
+          <a href="#" class="btn btn-info btn-sm pull-right"><i class="fa fa-plus-circle" aria-hidden="true"></i> Tạo đơn hàng</a>
+        </div>
+        <div class="form-group col-sm-3 col-xs-8 pull-right">
+
+          <div class="input-group">
+
+            <input type="text" class="form-control input-sm" placeholder="Tìm kiếm đơn hàng">
+            <span class="input-group-btn">
+                        <button class="btn btn-default btn-sm" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="importexcel">
+      <div class="nav-side-menu ">
+        <div class="brand">CHỨC NĂNG</div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+        <div class="menu-list">
+
+          <ul id="menu-content" class="menu-content collapse out active">
+            <li data-toggle="collapse" data-target="#products" class="collapsed active">
+              <a href="#"><i class="fa fa-cart-plus fa-lg"></i> TẠO ĐƠN HÀNG <span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse in" id="products">
+              <li><a href="#">Tạo nhanh đơn hàng</a></li>
+              <li><a href="#">Tạo nhiều đơn hàng</a></li>
+              <li><a href="#">Import đơn hàng (.xls)</a></li>
+            </ul>
+            <li>
+              <a href="#">
+                  <i class="fa fa-tasks fa-lg"></i> QUẢN LÝ ĐƠN HÀNG
+                  </a>
+            </li>
+            <li>
+              <a href="#">
+                  <i class="fa fa-map-o fa-lg"></i> QUẢN LÝ ĐỊA CHỈ LẤY HÀNG
+                  </a>
+            </li>
+            <li>
+              <a href="#">
+                  <i class="fa fa-money fa-lg"></i> QUẢN LÝ THU TIỀN HỘ
+                  </a>
+            </li>
+            <li data-toggle="collapse" data-target="#service" class="collapsed">
+              <a href="#"><i class="fa fa-user-o fa-lg"></i> QUẢN LÝ TÀI KHOẢN<span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse in" id="service">
+              <li>Thông tin tài khoản</li>
+              <li>Đổi mật khẩu</li>
+              <li>Thoát khỏi tài khoản</li>
+            </ul>
+            <li class="active">
+              <a href="#">
+                  <i class="fa fa-envelope-o fa-lg"></i> GỬI YÊU CẦU
+                  </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-content" id="importexcel">
+        <div class="col-sm-12">
+          <h4>QUẢN LÝ ĐƠN HÀNG </h4>
+        </div>
+        <div class="col-sm-12">
+          <h5 class="red">TÌM KIẾM THEO:</h5>
+
+          <form class="form-horizontal">
+            <fieldset>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputName" class="col-sm-4 control-label">Mã đơn hàng</label>
+                  <div class="col-sm-8 col-xs-12">
+                    <input type="name" class="form-control input-sm" id="inputName" placeholder="Nhập Mã vận đơn">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail" class="col-sm-4 control-label">TT người nhận</label>
+                  <div class="col-sm-8 col-xs-12">
+                    <input type="text" class="form-control input-sm" id="inputEmail" placeholder="Nhập tên hoặc SDT người nhận">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPhonenumber" class="col-sm-4 control-label">Gói cước</label>
+                  <div class="col-sm-8 col-xs-12">
+                    <select class="form-control input-sm" id="select">
+                        <option>--Chọn gói cước--</option>
+                        <option>Gói siêu nhanh</option>
+                        <option>Gói 6 giờ</option>
+                        <option>Gói 24 giờ</option>
+                        <option>Gói qua ngày</option>
+                        <option>Gói tiết kiệm</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputName" class="col-sm-4 control-label">Từ ngày</label>
+                  <div class="col-sm-8 col-xs-12">
+                    <input type="date" class="form-control input-sm">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail" class="col-sm-4 control-label">Đến ngày</label>
+                  <div class="col-sm-8 col-xs-12">
+                    <input type="date" class="form-control input-sm">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <a href="#" class="btn btn-danger btn-sm pull-right"><i class="fa fa-search" aria-hidden="true"></i> Tìm kiếm</a>
+                </div>
+
+              </div>
+
+            </fieldset>
+          </form>
+        </div>
+        <div id="listdon">
+          <ul>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-tatca active">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Tất cả
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-choduyet">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Chờ duyệt
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-daduyet">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Đã duyệt
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-danglayhang">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Đang lấy hàng
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-dalayhang">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Đã lấy hàng
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-danggiaohang">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Đang giao hàng
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-kothanhcong1">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Giao hàng thất bại lần 1
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-danggiaohanglan2">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Đang giao hàng lần 2
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-giaohangthanhcong">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Giao hàng thành công
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-trahang">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Giao hàng thất bại/ Trả hàng
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-hoantat">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Hoàn tất đơn hàng
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-1 col-xs-3">
+              <div class=" panel panel-default panel-huy">
+                <div class="panel-heading">{number}</div>
+                <div class="panel-body">
+                  Huỷ đơn hàng
+                </div>
+              </div>
+            </li>
+          </ul>
+
+
+
+        </div>
+
+        <div id="table-don">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Mã đơn hàng</th>
+                <th>Người nhận hàng</th>
+                <th>Tình trạng đơn hàng</th>
+                <th>Thông tin hàng hoá</th>
+                <th>Tiền thu hộ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p style="color:red">{ma_don_hang}</p>
+                  <p>{ngay_tao_don}</p>
+                  <button>Chi tiết</button>
+                </td>
+                <td>
+                  <p style="color:red">{ten_nguoi_nhan}</p>
+                  <p>{dia_chi_chi_tiet_noi_nhan}</p>
+                  <p>{dien_thoai_nguoi_nhan}</p>
+                </td>
+                <td>
+                  <p>{trang_thai_don}</p>
+                  <!--                            màu text theo trang thái-->
+                  <p> - {goi_dich_vu}</p>
+                </td>
+                <td>
+                  <p>{Ten_don_hang}</p>
+                  <p>- Lưu ý: {Luu_y}</p>
+                </td>
+                <td>
+                  <p style="color:red">{so_tien_thu_ho}</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="color:red">{ma_don_hang}</p>
+                  <p>{ngay_tao_don}</p>
+                  <button>Chi tiết</button>
+                </td>
+                <td>
+                  <p style="color:red">{ten_nguoi_nhan}</p>
+                  <p>{dia_chi_chi_tiet_noi_nhan}</p>
+                  <p>{dien_thoai_nguoi_nhan}</p>
+                </td>
+                <td>
+                  <p>{trang_thai_don}</p>
+                  <!--                            màu text theo trang thái-->
+                  <p> - {goi_dich_vu}</p>
+                </td>
+                <td>
+                  <p>{Ten_don_hang}</p>
+                  <p>- Lưu ý: {Luu_y}</p>
+                </td>
+                <td>
+                  <p style="color:red">{so_tien_thu_ho}</p>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <footer>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div>
+            <div class="widget">
+              <h4>SHIPPER RỒNG ĐỎ</h4>
+
+              <ul>
+                <li>
+                  <span class="fa-stack fa-lg">
+									
+									<i class="fa fa-calendar-o fa-stack-1x "></i>
+								</span> Monday - Saturday, 8am to 10pm
+                </li>
+                <li>
+                  <span class="fa-stack fa-lg">
+									
+									<i class="fa fa-phone fa-stack-1x "></i>
+								</span> +62 0888 904 711
+                </li>
+                <li>
+                  <span class="fa-stack fa-lg">
+									
+									<i class="fa fa-envelope-o fa-stack-1x "></i>
+								</span> hello@medicio.com
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+
+          <div>
+            <div class="widget">
+              <h4>THÔNG TIN</h4>
+              <ul>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Dịch vụ giao hàng</a></li>
+                <li><a href="#">Các gói dịch vụ</a></li>
+                <li><a href="#">Quy định sử dụng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+
+          <div class="widget">
+            <h4>TIN TỨC</h4>
+            <ul>
+              <li><a href="#">Thông tin công ty</a></li>
+              <li><a href="#">Tin tuyển dụng</a></li>
+              <li><a href="#">Tin tức</a></li>
+
+            </ul>
+
+
+          </div>
+
+
+
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget">
+            <h4>LIÊN KẾT MẠNG</h4>
+            <ul class="company-social">
+              <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+              <li class="social-google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
+            </ul>
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div>
+              <div class="text-left">
+                <p>© Copyright 2017 - Shipperrongdo. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div>
+              <div class="text-right">
+                <div class="credits">
+
+                  Designed and Developed by <a href="https://codeindex.pro/">Codeindex.pro</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /.container -->
+
+
+  <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
